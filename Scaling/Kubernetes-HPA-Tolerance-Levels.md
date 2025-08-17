@@ -23,3 +23,20 @@ This means you can make HPA respond faster when traffic increases (scale up quic
 
 Here is an example.
 
+<img width="412" height="382" alt="image" src="https://github.com/user-attachments/assets/35b3b48f-90ba-4ac6-8b3b-8808aa18ef3f" />
+
+Lets understand the the tolerance settings.
+
+scaleUp: tolerance: 0.01 (1% tolerance) - This means your app will scale UP (add more pods) very aggressively.
+
+For example, If your pods are running at 71% CPU, the HPA will immediately add more pods because it's above the 70.7% threshold.
+
+scaleDown: tolerance: 0.05 (5% tolerance) - This means your app will scale DOWN (remove pods) more conservatively.
+
+For example, if your pods are running at 67% CPU, the HPA will NOT remove pods because it's still above the 66.5% threshold.
+
+Conclusion>
+
+This change means your apps can now scale more precisely, getting resources exactly when needed based on the configuration you set.
+
+A small change that makes a huge difference in performance and efficiency.
