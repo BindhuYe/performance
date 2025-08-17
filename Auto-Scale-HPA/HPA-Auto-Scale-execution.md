@@ -22,4 +22,5 @@ HPA Tolerance Levels is a new alpha feature in Kubernetes v1.33 that allows you 
 This means you can make HPA respond faster when traffic increases (scale up quickly) and wait longer when traffic slows down (avoid scaling down too fast).
 
 Here is an example.
+<img width="346" height="400" alt="image" src="https://github.com/user-attachments/assets/fcc404fb-dc88-4a52-8cc7-e88a76913351" />
 
